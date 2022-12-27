@@ -1,3 +1,3 @@
-# Fun Comman Line Apps
+# Fun Command Line Apps
 
 Some fun command line apps built using python
