@@ -22,9 +22,12 @@ def download(url: str, condition: str, filename: str, res: str):
         home_directory = os.path.expanduser("~")
         path = os.path.join(home_directory, "Desktop")
         yt.download(output_path=path, filename=filename)
-        print("Video downloaded successfully in your desktop.")
+        if filename.endswith(".mp4"):
+            print("Video downloaded successfully in your desktop.")
+        else:
+            print("Audio downloaded successfully in your desktop.")
     except:
-        print("Couldn't download video")
+        print("Error while download, Please try again.")
 
 # To set filename variable
 def set_filename(name: str):
